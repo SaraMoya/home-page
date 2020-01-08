@@ -1,7 +1,7 @@
 * {font-family: sans-serif;}
 
 header div {
-    background-image: url(/assets/squares.svg);
+    background-image: url(./assets/squares.svg);
 }
 h1 {
     font-size: 45px;
@@ -9,6 +9,12 @@ h1 {
     margin: 0;
     color: #333333;
 }
+
+/* nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+} */
 
 nav ul {
     list-style: none;
@@ -36,3 +42,43 @@ nav a:hover {
 }
 
 body {margin: 0;}
+
+a, a:hover, a:active, a:focus {color: #333333;}
+
+p {font-size: 16px; color: #333333;}
+
+button {
+    border: 1px #333333 solid;
+    background-color: transparent;
+    padding: 0.5em;
+    margin: 1em 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    box-shadow: -3px 3px #000;
+    -webkit-transform: translate(3px,-3px);
+    transform: translate(3px,-3px);
+    outline: none;
+}
+
+iframe {
+    box-shadow: -3px 3px #000;
+}
+
+.social-media-links p {
+    display: inline;
+    padding-right: 0.5em;
+    font-size: 13px;
+}
+
+.splash-screen {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.highlighted-link {
+    background-color: yellow;
+}
