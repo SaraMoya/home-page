@@ -3,13 +3,6 @@
 header div {
     background-image: url(./assets/squares.svg);
 }
-h1 {
-    font-size: 45px;
-    padding: 2em;
-    margin: 0;
-    color: #333333;
-}
-
 /* nav {
     position: -webkit-sticky;
     position: sticky;
@@ -43,9 +36,16 @@ nav a:hover {
 
 body {margin: 0;}
 
-a, a:hover, a:active, a:focus {color: #333333;}
+h1 {
+    font-size: 45px;
+    padding: 2em;
+    margin: 0;
+    color: #333333;
+}
 
+a, a:hover, a:active, a:focus {color: #333333;}
 p {font-size: 16px; color: #333333;}
+h1, h2, h3 {text-transform: uppercase;}
 
 button {
     border: 1px #333333 solid;
@@ -73,7 +73,7 @@ iframe {
     font-size: 13px;
 }
 
-.splash-screen {
+.section-wrapper {
     display: flex;
     justify-content: space-around;
     padding: 2em;
@@ -82,3 +82,22 @@ iframe {
 .highlighted-link {
     background-color: yellow;
 }
+
+.dark-bg {
+    background-color: black;
+    color: #fff;
+}
+
+.dark-bg p{
+    color: #fff;
+}
+
+.partners img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 8vw;
+    padding: 2.5em;
+    filter: grayscale(100%);
+}
+
+
