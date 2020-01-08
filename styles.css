@@ -36,9 +36,11 @@ nav a:hover {
 
 body {margin: 0;}
 
+section {padding: 3vw 10vw;}
+
 h1 {
     font-size: 45px;
-    padding: 2em;
+    padding: 2em 3em;
     margin: 0;
     color: #333333;
 }
@@ -67,6 +69,8 @@ iframe {
     box-shadow: -3px 3px #000;
 }
 
+footer {padding: 3vw 10vw;}
+
 .social-media-links p {
     display: inline;
     padding-right: 0.5em;
@@ -75,8 +79,7 @@ iframe {
 
 .section-wrapper {
     display: flex;
-    justify-content: space-around;
-    padding: 2em;
+    justify-content: space-between;
 }
 
 .highlighted-link {
@@ -96,8 +99,20 @@ iframe {
     display: inline-block;
     vertical-align: middle;
     width: 8vw;
-    padding: 2.5em;
+    padding-right: 2.5em;
     filter: grayscale(100%);
 }
 
+.option-selection > div {
+    box-shadow: -3px 3px #000;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    padding: 1em;
+}
+
+.option-selection h3 {margin: 0;}
+.option-selection .section-wrapper div {
+    padding-right: 12vw;
+    box-sizing: border-box;
+}
 
