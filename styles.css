@@ -36,18 +36,20 @@ nav a:hover {
 
 body {margin: 0;}
 
-section {padding: 3vw 10vw;}
+section {padding: 2vw 10vw;}
 
 h1 {
-    font-size: 45px;
-    padding: 2em 3em;
+    font-size: 30px;
+    padding: 3em 5em;
     margin: 0;
     color: #333333;
 }
 
 a, a:hover, a:active, a:focus {color: #333333;}
-p {font-size: 16px; color: #333333;}
+p {font-size: 14px; color: #333333;}
 h1, h2, h3 {text-transform: uppercase;}
+h2 {font-size: 20px;}
+h3 {font-size: 16px; margin-bottom: 2em;}
 
 button {
     border: 1px #333333 solid;
@@ -70,6 +72,7 @@ iframe {
 }
 
 footer {padding: 3vw 10vw;}
+footer a {text-decoration: none;}
 
 .social-media-links p {
     display: inline;
@@ -82,7 +85,19 @@ footer {padding: 3vw 10vw;}
     justify-content: space-between;
 }
 
-.highlighted-link {
+.grid4 div {
+    width: 20%;
+}
+
+.grid3 div {
+    width: 33%;
+}
+
+.grid2 div {
+    width: 50%;
+}
+
+a[href*="mailto"] {
     background-color: yellow;
 }
 
@@ -91,7 +106,11 @@ footer {padding: 3vw 10vw;}
     color: #fff;
 }
 
-.dark-bg p{
+.dark-bg p {
+    color: #fff;
+}
+
+.dark-bg a, a:active, a:focus, a:hover {
     color: #fff;
 }
 
@@ -99,7 +118,7 @@ footer {padding: 3vw 10vw;}
     display: inline-block;
     vertical-align: middle;
     width: 8vw;
-    padding-right: 2.5em;
+    padding: 0 1em 2em 0;
     filter: grayscale(100%);
 }
 
@@ -114,5 +133,16 @@ footer {padding: 3vw 10vw;}
 .option-selection .section-wrapper div {
     padding-right: 12vw;
     box-sizing: border-box;
+}
+
+.chat {
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    padding: 1em;
+    cursor: pointer;
+    position: fixed;
+    bottom: 3vw;
+    right: 2vw;
 }
 
