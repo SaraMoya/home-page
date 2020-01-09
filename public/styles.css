@@ -6,7 +6,7 @@ header div {
 /* nav {
     position: -webkit-sticky;
     position: sticky;
-    top: 0px;
+    top: 0;
 } */
 
 nav ul {
@@ -83,10 +83,13 @@ footer a {text-decoration: none;}
 .section-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
+
 }
 
 .grid4 div {
-    width: 20%;
+    flex: 0 1 25%;
+    padding-right: 1em;
 }
 
 .grid3 div {
