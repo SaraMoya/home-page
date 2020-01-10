@@ -152,7 +152,18 @@ a[href*="mailto"] {
     right: 2vw;
 }
 
+.far {
+    font-size: 2em;
+}
+
 @media all and (max-width: 460px) {
+    h1 {
+        font-size: 1.5em;
+        padding: 1em;
+    }
+    section {
+        padding: 5px;
+    }
     .section-wrapper {
         display: flex;
         justify-content: space-between;
@@ -164,7 +175,16 @@ a[href*="mailto"] {
         padding: 0;
     }
 }
+/* @media (min-width: 460px) and (max-width: 800px) {
+    section {
+        padding: 2vw;
+    }
+    .section-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
-@media all and (max-width: 800px) {
-    
-}
+    .grid4 div, .grid3 div, .grid2 div {
+        padding-bottom: 2em;
+    }
+} */
