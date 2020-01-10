@@ -8,7 +8,7 @@ header div {
     position: sticky;
     top: 0;
 } */
-
+#mobileNav {display: none;}
 nav ul {
     list-style: none;
     margin: 0;
@@ -33,6 +33,50 @@ nav a:hover {
     color: #fff;
     opacity: 0.9;
 }
+
+#mobileNav {
+    background-color: black;
+    color: white;
+}
+
+.hamburger {
+    position: relative;
+    display: inline-block;
+  }
+  
+.hamburger-content {
+    background-color: black;
+    display: none;
+    position: absolute;
+    left:0;
+    z-index:1;
+    width: 100vw;
+  }
+
+.hamburger-content a {
+    color: white;
+}
+  
+.hamburger:hover .hamburger-content {
+    display: block;
+  /* animation: popup .5s ease-in-out both; */
+  }
+  
+.hamburger span {
+    padding: 5px;
+    transition: transform .5s;
+  -webkit-transition: -webkit-transform .5s;
+    display: block;
+    transform: rotate(90deg);
+    font-size: 2em;
+  }
+  
+.hamburger:hover span {
+    transition: transform .5s;
+  -webkit-transition: -webkit-transform .5s;
+    display: inline-block;
+    transform: rotate(180deg);
+  }
 
 body {margin: 0;}
 
@@ -156,7 +200,9 @@ a[href*="mailto"] {
     font-size: 2em;
 }
 
-@media all and (max-width: 460px) {
+@media all and (max-width: 500px) {
+    #desktopNav {display: none;}
+    #mobileNav {display: block;}
     h1 {
         font-size: 1.5em;
         padding: 1em;
@@ -165,17 +211,16 @@ a[href*="mailto"] {
         padding: 5px;
     }
     .section-wrapper {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .grid4 div, .grid3 div, .grid2 div {
-        flex: 0 0 100%;
         padding: 0;
     }
 }
-/* @media (min-width: 460px) and (max-width: 800px) {
+@media screen and (min-width: 500px) and  (max-width: 800px) {
+    h1 {padding: 2em;}
     section {
         padding: 2vw;
     }
@@ -187,4 +232,4 @@ a[href*="mailto"] {
     .grid4 div, .grid3 div, .grid2 div {
         padding-bottom: 2em;
     }
-} */
+}
