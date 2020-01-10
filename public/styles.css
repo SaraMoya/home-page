@@ -69,6 +69,7 @@ button:hover {
 
 iframe {
     box-shadow: -3px 3px #000;
+    width: 100%;
 }
 
 footer {padding: 3vw 10vw;}
@@ -93,11 +94,13 @@ footer a {text-decoration: none;}
 }
 
 .grid3 div {
-    width: 33%;
+    flex: 0 1 33%;
+    padding-right: 1em;
 }
 
 .grid2 div {
-    width: 50%;
+    flex: 0 1 50%;
+    padding-right: 1em;
 }
 
 a[href*="mailto"] {
@@ -149,3 +152,19 @@ a[href*="mailto"] {
     right: 2vw;
 }
 
+@media all and (max-width: 460px) {
+    .section-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .grid4 div, .grid3 div, .grid2 div {
+        flex: 0 0 100%;
+        padding: 0;
+    }
+}
+
+@media all and (max-width: 800px) {
+    
+}
